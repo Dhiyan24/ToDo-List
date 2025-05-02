@@ -18,7 +18,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
-          sonar-scanner.bat ^
+          "C:\Users\DHIYANESH\OneDrive\Desktop\GuhaTek\CICD\sonarqube-25.4.0.105899\sonar-scanner-7.1.0.4889-windows-x64\bin\sonar-scanner.bat" ^
             -Dsonar.host.url=%SONAR_HOST_URL% ^
             -Dsonar.token=%SONAR_TOKEN%
         shell: cmd
